@@ -23,4 +23,4 @@ Here are some topics name covered inside this repo:
 
 10.Generics and Collection
 
-There are more repositories, https://github.com/rajat0406  you can it for more.
+There are more repositories, https://github.com/rajat0406  you can refer it for more.
