@@ -1,0 +1,49 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+public class TestClass{
+  public static void main(String args[]){
+    String s1;
+    Scanner obj=new Scanner(System.in);
+    int T=obj.nextInt();
+    for(int i=0;i<T;i++)
+    {
+      int n=obj.nextInt();
+      int key=obj.nextInt();
+      int n1=n;
+      int arr[]=new int[20];
+      int j=0;
+      while(n>0){
+        arr[j]=n%2;
+        n=n/2;
+        j++;
+      }
+      int arr1[]=new int[j];
+      int j1=0;
+      for(int k=0;k<j;k++){
+       arr1[j1]=arr[k];
+        j1++;
+      }
+      int h1=arr1.length-1;
+      if(key<=j1){
+      if(arr1[key-1]==0)
+      {
+        System.out.print(n1);
+      }
+      else
+      {
+        arr1[key-1]=0;
+        for(int h=0;h<arr1.length;h++){ 
+          if(arr1[h]==1){
+         n+=Math.pow(2, h);
+        }
+        }
+        System.out.print(n);
+      }
+      }
+      else
+        System.out.print(n1);
+      System.out.println();
+    }
+  }
+}    
